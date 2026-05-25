@@ -3,7 +3,7 @@ Welcome to my Code.
 The two folders important folders here are Airflow and Vibrations. Each covers a separate experiment.
 Thus if you are interested in the Shaker-Table vibrational study head to Vibrations, if you are interested in the Airflow experiment navigate to AirFlow.
 
-You'll find a README file in each folder, the general structure from here on looks as follows:
+The general structure from here on looks as follows:
 
 
 ├── Airflow/
@@ -27,3 +27,5 @@ You'll find a README file in each folder, the general structure from here on loo
     │   └── Plot_Vib.py
     ├── Main.py
     └── Get_Data_Vib.py
+
+.
