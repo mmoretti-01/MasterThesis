@@ -1,11 +1,16 @@
-Welcome to my Code.
+# Code
 
-The two folders important folders here are Airflow and Vibrations. Each covers a separate experiment.
-Thus if you are interested in the Shaker-Table vibrational study head to Vibrations, if you are interested in the Airflow experiment navigate to AirFlow.
+Welcome to the code section of this repository.
 
-The general structure from here on looks as follows:
+The two main folders in this directory are **`Airflow/`** and **`Vibrations/`**. Each contains the code associated with a separate experiment:
 
+- For the **shaker-table vibrational study**, navigate to **`Vibrations/`**.
+- For the **airflow experiment**, navigate to **`Airflow/`**.
 
+## Directory Structure
+
+```text
+.
 ├── Airflow/
 │   ├── Functions_AirFlow.py
 │   ├── Get_Data_AirFlow.py
@@ -27,5 +32,3 @@ The general structure from here on looks as follows:
     │   └── Plot_Vib.py
     ├── Main.py
     └── Get_Data_Vib.py
-
-.
