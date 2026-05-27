@@ -1,8 +1,23 @@
-Welcome to my Projcet.
+# Master's Project
 
-As you see there are two folders. In the Data folder you'll find the measurement data separated into Background and Laserdisp which belong to the Shaker-Table analysis and WindTunnel. The second folder is where you'll find the code.
-In all subfolders of the Code you'll find a README file with further infos and instructions.
-The general structure of the Project is as follows:
+Welcome to my Master's Project repository.
+
+This repository contains the measurement data and analysis code developed during my **Master's Project at the University of Oxford**. The project is intended to function as a standalone repository, with the data and code required to reproduce the included analyses.
+
+## Repository Structure
+
+The repository is divided into two main folders:
+
+- **`Data/`**  
+  Contains the measurement data used in the project. The data are organized into:
+  - **`Background/`** and **`Laserdisp/`**, which contain measurements related to the shaker-table analysis;
+  - **`WindTunnel/`**, which contains measurements from the wind-tunnel experiments.
+
+- **`Code/`**  
+  Contains the code used for data processing, analysis, and visualization. Each subfolder within `Code/` includes its own `README.md` file with further information and instructions specific to that part of the analysis.
+
+## General Project Structure
+
 
 ```
 Project_Root/
