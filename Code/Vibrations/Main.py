@@ -95,8 +95,6 @@ stop = 70
 #Initial values for the Harmonic Osci resonance fit
 p0_HO = [1, 41, 90]
 #p0_HO = [1, 21, 40]
-#p0_2D = [1, 80, 60, -1, 10, 50, 1, 180, 50, 0.1, 220, 50]
-#p0_2D = [0.5, 81, 56, 0.01, 8, 5, 0.01, 30, 20, 0.1, 114, 10] 
 
 #Initial values for the Bernoulli Beam resonance fit
 p0_BB_2 = [0.5, 21, 55, 0.1, 111, 20]
@@ -128,27 +126,14 @@ z = np.array(z)
 p0_tension = [1, 32]
 
 """ ---------- DIY ---------- """
-#Vib.tension_dep(p0_tension)
-
-#Vib.four_col_comp(71, 76, 77, 78, 1, 1)
-#Vib.four_col_comp(57, 58, 59, 60, 1, 1)
-
-#ASD.ASD_response(i, n, points, overlap, N, r, p0_BB_5)
-#ASD.ASD_plot(i, n, points, overlap)
 Vib.single_pic(N,1)
-#Vib.single_pic_comp(N-1,N,r,r)
-#Vib.three_col_comp(83, 82, 84 , 1, 1, 1)
-#Vib.two_col_comp(56, 83, 1, 1)
-#Vib.two_col_comp(82, 84, 1, 1)
+
 #Vib.plot_fit(N, p0_BB_5, r)
-#Vib.single_pic_comp(N, N, 1, 5)
-#Vib.single_test(N, p0_BB_5, y, z, w)
+
 #ASD.Ladder_Contour(i, n, points, overlap, start, stop, r, p0_HO)
 #ASD.Ladder_Contour_xyz(i, points, overlap, start, stop, r, p0_HO, z)
 
-
 #ASD.ASD_smooth_SG(i, n, points, overlap, window, order) 
-
 #ASD.envelope_plot(i, n, points, overlap)
 
 #ASD.Histo_env(i, points, overlap, y, l, p0_HO)
@@ -159,11 +144,6 @@ Vib.single_pic(N,1)
 ASD.Displacement_vs_frequency_ana(i, n, points, overlap, window, order, N, r, p0_HO)
 
 
-#Vib.two_col_comp(79, 79, 2, 3)
-
-print(nl.integrate_disc__(N, r, p0_HO, i, 0, points, overlap))
-print(nl.integrate_disc__(N, r, p0_HO, i, 1, points, overlap))
-print(nl.integrate_disc__(N, r, p0_HO, i, 2, points, overlap))
 
 
 
