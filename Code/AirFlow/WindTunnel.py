@@ -84,7 +84,6 @@ p0_velo =[1]
 
 
 """ ---------- DIY ---------- """
-
 freqs, data = func.averaged_FFT(distances[89,:,1], rate, window_len, overlap)
 #, data_flows = welch(flows[:,52], rate_, nperseg = 71, noverlap =None)
 
@@ -93,8 +92,6 @@ freqs, data = func.averaged_FFT(distances[89,:,1], rate, window_len, overlap)
 v_mean = func.merge_n_mean(flows,6,18)
 v_mean2 = func.merge_n_mean(flows,20,28)
 
-
-
 flows_mean = func.flows_average(flows[30:38]) 
 flow_mean_1 = func.flows_average(flows[6:19])
 flow_mean_2 = func.flows_average(flows[20:29])
@@ -102,6 +99,7 @@ flows_mean_4 = func.flows_average(flows[52:71])
 #flows_mean_5 = func.flows_average(flows[71:87])
 flows_mean_6 = func.flows_average(flows[87:102])
 flow_mean = func.flows_average_(flows[102:119])
+
 std1 = np.std(flows[116])
 std2 = np.std(flows[117])
 
@@ -119,9 +117,8 @@ plot.RMS_vs_Flow_comp(distances,41,59,75,90,flows_mean_4[1:],flows_mean_6,p0)
 #plot.RMS_vs_Flow(distances, 75, 90, flows_mean_6, p0)
 #plot.RMS_vs_Flow(distances, 59, 75, flows_mean_5, p0)
 #plot.RMS_vs_Flow(distances, 41, 59, flows_mean_4[1:], p0)
-#plot.Plot_EV(distances[24])
-#plot.Plot_FFT(freqs, data, 24)
-#plot.Plot_FFT(freqs, data, 41)
+
+
 
 
 
