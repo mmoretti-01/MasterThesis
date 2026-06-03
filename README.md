@@ -2,7 +2,7 @@
 
 Welcome to my Master's Project repository.
 
-This repository contains the measurement data and analysis code developed during my **Master's Project at the University of Oxford**. The project is intended to function as a standalone repository, with the data and code required to reproduce the included analyses.
+This repository contains selected measurement data and analysis code developed during my Master's project at the University of Oxford. It is intended to document the analysis workflow and make the main calculations and plotting routines accessible. While the repository includes the relevant data and code used for the analysis, some scripts may require minor adjustments to paths, parameters, or local settings before being run in a different environment.
 
 ## Repository Structure
 
