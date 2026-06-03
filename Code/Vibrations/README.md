@@ -1,46 +1,28 @@
-In this folder you'll find the code for the Shaker-Table experiment:
+# Vibrations
 
-My workflow consisted of writing plot functions in the Plot subfolder and executing them from the main.py file. 
-You can find two word documents in this folder. The Run List can be used to map the Nr to an exact measurement. The second file gives a list of all available plots.
-If you want to use functions, you are free to do so. Don't forget to import them: import ... as ... 
-You'll find more about the functions provided in the README file of the corresponding subfolders. The functions are divided into ASD and Table. So if you want to analyse acceleration spectral density open the ASD folder, else the Table folder.
+This folder contains the code used to analyse and plot the data from the shaker-table vibration experiment.
 
-The Arrays used look as follows:
-==============================
-   DATA STRUCTURE OVERVIEW
-==============================
+The workflow is organised around `Main.py`. This file is used to select parameters and execute the desired plot functions. The plot functions themselves are written in the `Plots/` folder, and they use helper and analysis functions defined in the function folders.
 
-Array structure: data[y][j][N]
+There are two separate function folders:
 
-j = index for measurement data points
-y = 0 for frequency, 1 for sensor 2 measurement, 2 for sensor 4 measurement 
-N = selects which of the N measurements to consider
+- `Functions_ASD/`: functions related to acceleration spectral density analysis.
+- `Functions_Table/`: functions related to the vibration/table analysis.
 
-Visualization (for a single i):
+Because there are many available plot functions, the file `AA List of Plot commands.docx` summarises the available plotting commands and options. The file `A Run list.docx` is used to keep track of which dataset belongs to which measurement.
 
-       y=0 (frequency)      y=1 (sensor 2 measurement)
-j=0    data[0][0][N]          data[0][1][N]
-j=1    data[1][0][N]          data[1][1][N]
-j=2    data[2][0][N]          data[2][1][N]
-...        ...                    ...
+The additional Python files are used to simplify the handling and organisation of the datasets.
 
- 
+## File structure
 
-==============================
-     DATA_A ARRAY STRUCTURE
-==============================
-
-Array structure: data_a[n][j][l]
-
-n = selects which of the 3 measurements to consider
-j = index for measurement data points
-l = 0 for frequency, 1 for sensor measurement
-
-Visualization (for a single i):
-
-       l=0 (frequency)      l=1 (sensor measurement)
-j=0    data_a[n][0][0]          data_a[n][0][1]
-j=1    data_a[n][1][0]          data_a[n][1][1]
-j=2    data_a[n][2][0]          data_a[n][2][1]
- ...         ...                     ...
-
+```text
+Vibrations/
+├── Main.py
+├── Get_Data_Vib.py
+├── Rename_Files.py
+├── A Run list.docx
+├── AA List of Plot commands.docx
+├── Functions_ASD/
+├── Functions_Table/
+├── Plots/
+└── README.md
