@@ -1,29 +1,15 @@
-Welcome to my Code.
+# AirFlow
 
-The two folders that you can see cover each a separate experiment.
-Thus if you are interested in the Shaker-Table vibrational study go to Vibrations, if you are interested in the Airflow experiment navigate to AirFlow.
+This folder contains the code used to acquire, process, and plot the data from the airflow experiment.
 
-You'll find a README file in each folder, The general structure looks as follows:
+The code is organized so that `WindTunnel.py` acts as the main entry point. It is used to choose the relevant parameters and run the desired plotting routines. The plotting routines are defined in `Plot_AirFlow.py`, while the underlying analysis and helper functions are collected in `Functions_AirFlow.py`. Data acquisition is handled separately by `Get_Data_AirFlow.py`.
 
-Project_Root/
-├── Airflow/
-│   ├── Functions_AirFlow.py
-│   ├── Get_Data_AirFlow.py
-│   ├── Plot_AirFlow.py
-│   └── WindTunnel.py
-│
-└── Vibrations/
-    ├── A Run List.docx
-    ├── AA List of Plot comments.docx
-    ├── Functions_ASD/
-    │   ├── Functions_PSI.py
-    │   ├── Functions_A.py
-    │   └── Functions_B.py
-    ├── Functions_Table/
-    │   ├── Functions_Table_Linear.py
-    │   └── Functions_Table_NL.py
-    ├── Plots/
-    │   ├── Plot_ASD.py
-    │   └── Plot_Vib.py
-    ├── Main.py
-    └── Get_Data_Vib.py
+## File structure
+
+```text
+AirFlow/
+├── WindTunnel.py
+├── Get_Data_AirFlow.py
+├── Plot_AirFlow.py
+├── Functions_AirFlow.py
+└── README.md
