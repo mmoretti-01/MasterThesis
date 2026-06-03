@@ -14,7 +14,7 @@ The repository is divided into two main folders:
   - **`WindTunnel/`**, which contains measurements from the wind-tunnel experiments.
 
 - **`Code/`**  
-  Contains the code used for data processing, analysis, and visualization. Each subfolder within `Code/` includes its own `README.md` file with further information and instructions specific to that part of the analysis.
+  Contains the code used for data processing, analysis, and visualisation. Each subfolder within `Code/` includes its own `README.md` file with further information and instructions specific to that part of the analysis.
 
 ## General Project Structure
 
